@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TKP Student Records</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Bootstrap core CSS  Freelancer -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template  Freelancer -->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+  <!-- Plugin CSS  Freelancer -->
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+
+  <!-- Custom styles for this template  Freelancer -->
+  <link href="css/freelancer.min.css" rel="stylesheet">
+
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+  <!-- Charts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>
+
+  <!-- Custom JS -->
+  <script src="basic.js"></script>
+  <script src="http://script.sheetsu.com/"></script>
+
+  <script src="js/bootstrap.min.js"></script>
+
+
+  </head>
+  <body id="page-top">
+
+<div class="container">
+    <header class="jumbotron bg-primary text-white text-center" id="overview">
+
+        <h1 class="text-uppercase mb-0">TKP Student Records
+        </h1>
+        <h3 id="className">Select a class:</h3>
+
+    </header>
+
+    <!-- Stuff -->
+
+<ul class="nav nav-tabs" id="class"></ul>
+
+
+        <table class="table table-hover">
+          <thead>
+            <th>StudentID</th>
+            <th>Name Last</th>
+            <th>First Middle</th>
+          </thead>
+          <tbody id="list">
+
+          </tbody>
+        </table>
+
+
+    <div id="student"></div>
+
+
+</body>
+
+<script>
+loadClasses();
+</script>
+
+</html>

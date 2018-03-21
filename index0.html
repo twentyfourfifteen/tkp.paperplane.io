@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap 101 Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="basic.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+
+    <header class="masthead bg-primary text-white text-center">
+      <div class="container">
+        <h2 class="text-uppercase mb-0">
+          <script>
+              var name = findGetParameter("name");
+              if (!name) {
+                document.write("Pick a class")
+              } else {
+                document.write(name);
+              };
+          </script>
+        </h2>
+      </div>
+    </header>
+
+    <!-- Stuff -->
+
+    <section class="portfolio" id="portfolio">
+      <div class="container">
+        <table>
+          <thead>
+            <th>Name</th>
+            <th>Score</th>
+          </thead>
+          <tbody sheetsu="https://sheetsu.com/apis/v1.0su/0621583e95d7">
+            <tr>
+              <td>{{campus}}</td>
+              <td><a href="class.html?id={{id}}&name={{name}}">{{name}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+<script src='//load.sheetsu.com'></script>
+
+
+  </body>
+</html>
