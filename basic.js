@@ -20,6 +20,7 @@ function findGetParameter(parameterName) {
 
 //------
 function loadClasses(){
+  console.log("started")
   var newClasses = [];
     function classTable(data) {
       data.forEach(function(item, i) {
@@ -27,6 +28,7 @@ function loadClasses(){
         item = "<li onclick=loadTable('" + item.id + "');><a href='#'>" + item.name +"</a></li>";
         document.getElementById("class").innerHTML += item;
       });
+      console.log("finished")
     }
 
     function errorFunc(e) {
