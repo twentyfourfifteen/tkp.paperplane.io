@@ -3,10 +3,34 @@
 <head>
   <title>TKP Student Records</title>
 
-  <meta charset="utf-8">
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+  <meta name="description" content="Student Data Viewer">
+  <meta name="author" content="Scott Smith">
+
+  <title>TKP Student Records</title>
+
+  <!-- jQuery library--->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+  <!-- Favicons
+  <link rel="apple-touch-icon" href="/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="manifest" href="/assets/img/favicons/manifest.json">
+  <link rel="mask-icon" href="/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="msapplication-config" content="/assets/img/favicons/browserconfig.xml">
+  <meta name="theme-color" content="#563d7c">-->
+
+
 
   <!-- Bootstrap core CSS  Freelancer -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -16,8 +40,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
-  <!-- Plugin CSS  Freelancer -->
-  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css">
+  <!-- Plugin CSS  Freelancer
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"> -->
 
   <!-- Custom styles for this template  Freelancer -->
   <link href="css/freelancer.min.css" rel="stylesheet">
@@ -26,53 +50,70 @@
   <!-- Bootstrap -->
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 
-  <!-- Charts -->
+  <!-- Charts
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-  <script src="http://code.jquery.com/jquery.js"></script>
+  <script src="http://code.jquery.com/jquery.js"></script>-->
 
-  <!-- Custom JS -->
+
+  <!-- Custom -->
   <script src="basic.js"></script>
+  <link href="css/custom.css" rel="stylesheet" type="text/css">
+  <link href="css/chart.css" rel="stylesheet" type="text/css">
   <script src="http://script.sheetsu.com/"></script>
-
   <script src="js/bootstrap.min.js"></script>
-
 
   </head>
   <body id="page-top">
 
-<div class="container">
+
+    <div class="container">
     <header class="jumbotron bg-primary text-white text-center" id="overview">
 
-        <h1 class="text-uppercase mb-0">TKP Student Records
+        <h1 class="text-uppercase mb-0">
+          <a href="index.html">TKP Student Records</a>
         </h1>
         <h3 id="className">Select a class:</h3>
 
+        <div id="preloader" class="preloader-1">
+        <div >Loading</div>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+          <span class="line line-4"></span>
+          <span class="line line-5"></span>
+          <span class="line line-6"></span>
+          <span class="line line-7"></span>
+          <span class="line line-8"></span>
+          <span class="line line-9"></span>
+        </div>
+
     </header>
 
-    <!-- Stuff -->
-
-<ul class="nav nav-tabs" id="class"></ul>
+<!-- Stuff -->
 
 
-        <table class="table table-hover">
-          <thead>
-            <th>StudentID</th>
-            <th>Name Last</th>
-            <th>First Middle</th>
-          </thead>
-          <tbody id="list">
 
-          </tbody>
-        </table>
+<nav id="class" class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Loading Classes</a>
+  <!--<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <a class="nav-item nav-link" href="#">Loading...</a>-->
+</nav>
 
+<div id="classOptions"></div>
 
-    <div id="student"></div>
+<div id="list"></div>
 
+<div id="student"></div>
 
 </body>
 
 <script>
-loadClasses();
+initialize();
 </script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 </html>

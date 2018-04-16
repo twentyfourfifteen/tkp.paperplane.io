@@ -1,0 +1,13 @@
+{
+  "urls":{
+    "prototype":["main","attendance","grades","medical"],
+    "intimigom":["https://sheetsu.com/apis/v1.0su/0621583e95d7","https://sheetsu.com/apis/v1.0bu/c182da104d40","https://sheetsu.com/apis/v1.0su/1b9e7d5e139b","https://sheetsu.com/apis/v1.0su/c96fb2d5c95c"],
+    "oltikampu":["https://sheetsu.com/apis/v1.0su/a470f9d6b0a2","https://sheetsu.com/apis/v1.0su/11de8de920a8"],
+    "oloowang":["",""],
+    "nentekeny":["",""],
+    "ololturot":["",""],
+    "oloilale":["",""]},
+  "classes":{
+    "intimigom":{"class1":"Class 1","class2":"Class 2","class3":"Class 3","class4":"Class 4","class5":"Class 5","class6":"Class 6","class7":"Class 7","class8green":"Class 8 Green","class8red":"Class 8 Red"}
+  }
+}

@@ -1,0 +1,50 @@
+/*@import "compass/css3";
+
+body{
+  font:13px/1.3 'Lucida Grande',sans-serif;
+  color:#666;
+}*/
+
+.chart{
+  display:table;
+  table-layout: fixed;
+
+  width:60%;
+  max-width:700px;
+  height:300px;
+  margin:0 auto;
+
+  background-image:linear-gradient(bottom, rgba(0, 0, 0, 0.1) 2%, transparent 2%);
+  background-size: 100% 50px !important;
+  background-position: left top;}
+
+.chartli{
+    position:relative;
+    display:table-cell;
+    vertical-align:bottom;
+    height:200px;
+  }
+
+.chartspan{
+    margin:0 1em;
+    display: block;
+    background: #00bfffb3;
+    animation: draw 1s ease-in-out;
+    width: 70% !important;
+
+
+    &:before{
+      position:absolute;
+      left:0;right:0;top:100%;
+      padding:5px 1em 0;
+  		display:block;
+      text-align:center;
+      content:attr(title);
+      word-wrap: break-word;
+    }
+
+  }
+
+@keyframes draw{
+  0%{height:0;}
+}
